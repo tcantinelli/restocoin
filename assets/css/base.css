@@ -1,0 +1,48 @@
+*{
+    font-family: 'Comfortaa', cursive;
+}
+
+.caption {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 90px;
+}
+
+.form-inline>*{
+    margin: 0px 4px;
+}
+.titreMiddle{
+    margin-bottom: 0px !important;
+}
+
+.input-group{
+    margin: 4px;
+}
+
+.carte{
+    text-align: center;
+}
+
+.petiteCarte{
+    border: 2px solid rgb(22, 126, 121);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.elementCol{
+    border: 2px solid rgb(22, 126, 121);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.pageSelected{
+    font-weight: bold;
+}
+
+.wrongInput{
+    border: 2px solid red;
+}

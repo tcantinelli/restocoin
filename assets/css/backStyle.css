@@ -1,0 +1,19 @@
+.item{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(22, 126, 121);
+    border-radius: 5px;
+    padding-top: 20px;
+}
+
+.row{
+    margin: 20px 0px;
+}
+
+.hidden{
+    display: none;
+}
+
+.ptitButton{
+    margin: 0px 2px;
+}
