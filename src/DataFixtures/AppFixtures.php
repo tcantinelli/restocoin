@@ -20,8 +20,8 @@ class AppFixtures extends Fixture
         $this->makeMessages($manager);
         $this->makeTypes($manager);
         $this->makePlats($manager);
-        // $this->makeMenus($manager);
-        // $this->makeCartes($manager);
+        $this->makeMenus($manager);
+        $this->makeCartes($manager);
         
 
     }
@@ -137,7 +137,7 @@ class AppFixtures extends Fixture
 
         $listeNoms =["Noel","Carte 2","Novembre 2017","Carte 4","Carte 5"];
         $listeDates = ["2016-11-23 10:18","2016-06-04 11:07","2017-10-30 21:47","2017-05-15 23:21","2016-05-08 19:21"];
-        $listeOnline = [0,1,1,1,0];
+        $listeOnline = [0,0,1,0,0];
         $listeMenus = [
             [1,4],[2,3,5],[1,5],[2,3,4,5],[2]
         ];

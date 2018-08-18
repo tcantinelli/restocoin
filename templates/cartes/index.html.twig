@@ -1,19 +1,22 @@
 {% extends 'base.html.twig' %} {% block body %} {{ parent() }}
-
+{{ dump(listeMenus) }}
 <div class="container-fluid">
     <div class="row bandeau">
         <div class="row insideBandeau">
             <div class="col titreBandeauL mx-auto">
-                Notre carte du jour
+                ~ Menus du jour ~
             </div>
         </div>
         <div class="row insideBandeau ">
-            {% for menu in listeCartes %}
-                <div class="col">
-                    <div class="card mx-auto" style="width: 14rem;">
+            {% for menu in listeMenus %}
+                <div class="col offset-1">
+                    <div class="row">
+                        <h5>Menu {{ menu.nom }}</h5>
+                    </div>
+                    <div class="card mx-auto" style="width: 15rem;">
                         <img class="card-img-top" src="{{ asset('images/menu.image') }}" alt="Card image cap">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">{{ menu.nom }}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>

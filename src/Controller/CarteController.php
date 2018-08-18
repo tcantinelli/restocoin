@@ -14,11 +14,12 @@ class CarteController extends Controller
     public function index(){
 
         //Recup cartes online
-        $listeCartes = $this->getDoctrine()->getRepository(Carte::class)->findBy(array('online' => true));
+        $carteDuJour = $this->getDoctrine()->getRepository(Carte::class)->findOneBy(array('online' => true));
 
+        $listeMenus = $carteDuJour->getListeMenus();
 
         return $this->render('cartes/index.html.twig', [
-            'listeCartes' => $listeCartes,
+            'listeMenus' => $listeMenus,
         ]);
     }
 }

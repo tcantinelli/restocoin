@@ -28,6 +28,11 @@
     font-size: 6vh;
     color: #312d2d;
 }
+.titreBandeauM{
+    text-align: center;
+    font-size: 5vh;
+    color: #312d2d;
+}
 
 .nav-link,.navbar-brand {
     color: #312d2d !important;
