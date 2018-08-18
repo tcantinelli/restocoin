@@ -1,5 +1,4 @@
 {% extends 'base.html.twig' %} {% block body %} {{ parent() }}
-{{ dump(listeMenus) }}
 <div class="container-fluid">
     <div class="row bandeau">
         <div class="row insideBandeau">
@@ -9,17 +8,25 @@
         </div>
         <div class="row insideBandeau ">
             {% for menu in listeMenus %}
-                <div class="col offset-1">
-                    <div class="row">
-                        <h5>Menu {{ menu.nom }}</h5>
+                <div class="col menuCol">
+                    <div class="row justify-content-center">
+                        <h3>Menu {{ menu.nom }}</h3>
                     </div>
-                    <div class="card mx-auto" style="width: 15rem;">
-                        <img class="card-img-top" src="{{ asset('images/menu.image') }}" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">{{ menu.nom }}</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="row justify-content-center">
+                        <p>{{ menu.description }}</p>
+                    </div>
+                    <div class="row">
+                        {% for plat in menu.listePlats %}
+                        <div class="col">
+                            <div class="card mx-auto" style="width: 15rem;">
+                                <img class="card-img-top" src={{ 'build/images/' ~ plat.image }} alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ plat.type.intitule }}</h5>
+                                    <h5 class="card-title">{{ plat.nom }}</h5>
+                                </div>
+                            </div>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
             {% endfor %}

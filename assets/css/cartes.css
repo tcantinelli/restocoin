@@ -12,7 +12,7 @@
 }
 
 .bandeau{
-    height: 500px;
+    height: auto;
     margin: 30px;
     padding: 10px;
     border: 2px solid #312d2d;
@@ -21,6 +21,15 @@
 
 .insideBandeau{
     width: 100%;
+    margin: 15px;
+}
+
+.menuCol{
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
 }
 
 .titreBandeauL{

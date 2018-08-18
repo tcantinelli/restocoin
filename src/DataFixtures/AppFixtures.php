@@ -93,7 +93,7 @@ class AppFixtures extends Fixture
         $listeNoms =["Hamburger","Pancakes","Buche de Noël","French Hot Dog","Poulet crispy","Tacos","Hamburger frites","Salade de crudités","Wok épicé","Gratin savoyard","Mochi","Salade de fruits","Café gourmand","Avocat Oeufs","Salade de riz","Soupe miso"];
         $listePrix = [5,2,4.9,2.9,3.5,3.5,8.9,2.90,6.9,6.9,2.9,2.8,1.9,2.30,1.9,1.9];
         $listeTypes =[2,3,3,1,1,1,2,1,2,2,3,3,3,1,1,1];
-        $listeImages = ["burger.jpeg","pancakes.jpg","bucheNoel.jpg","frenchHot.jpg","crispyChicken.jpeg","tacos.jpeg","burgerFrites.jpg","salad.jpg","wok.jpg","gratinSavoyard.jpg","mochi.jpg","saladeFruits.jpeg","cafeGourmand.jpeg","duoAvocatOeuf.jpg","saladeRiz.jpg","miso.jpeg"];
+        $listeImages = ["burger.jpeg","pancakes.jpg","bucheNoel.jpg","frenchHot.jpg","crispyChicken.jpeg","tacos.jpeg","burgerFrites.jpg","salad.jpg","wok.jpg","gratinSavoyard.jpg","mochi.jpg","saladeFruits.png","cafeGourmand.jpeg","duoAvocatOeuf.jpg","saladeRiz.jpg","miso.jpeg"];
         
         for($i = 0 ; $i < count($listeNoms) ; $i++){
 
